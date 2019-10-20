@@ -6,10 +6,10 @@
 ProjectName            :=Exercise2A
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/Victo/OneDrive/GitHubDS
-ProjectPath            :=C:/Users/Victo/OneDrive/GitHubDS/Exercise2A
-IntermediateDirectory  :=../build-$(ConfigurationName)/Exercise2A
-OutDir                 :=../build-$(ConfigurationName)/Exercise2A
+WorkspacePath          :=C:/Users/Victo/OneDrive/GitHubDS/Ejercicios
+ProjectPath            :=C:/Users/Victo/OneDrive/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A
+IntermediateDirectory  :=../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A
+OutDir                 :=../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
@@ -28,7 +28,7 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
-OutputFile             :=..\build-$(ConfigurationName)\bin\$(ProjectName)
+OutputFile             :=..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\bin\$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
@@ -62,7 +62,7 @@ AS       := "C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/Exercise2A/main.cpp$(ObjectSuffix) 
+Objects0=../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(ObjectSuffix) 
 
 
 
@@ -74,18 +74,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): ../build-$(ConfigurationName)/Exercise2A/.d $(Objects) 
-	@if not exist "..\build-$(ConfigurationName)\Exercise2A" mkdir "..\build-$(ConfigurationName)\Exercise2A"
+$(OutputFile): ../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/.d $(Objects) 
+	@if not exist "..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\__\__\Documentos\GitHub\basic-linear-structures-gr10\Exercise2A" mkdir "..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\__\__\Documentos\GitHub\basic-linear-structures-gr10\Exercise2A"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@if not exist "..\build-$(ConfigurationName)\Exercise2A" mkdir "..\build-$(ConfigurationName)\Exercise2A"
-	@if not exist ""..\build-$(ConfigurationName)\bin"" mkdir ""..\build-$(ConfigurationName)\bin""
+	@if not exist "..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\__\__\Documentos\GitHub\basic-linear-structures-gr10\Exercise2A" mkdir "..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\__\__\Documentos\GitHub\basic-linear-structures-gr10\Exercise2A"
+	@if not exist ""..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\bin"" mkdir ""..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\bin""
 
-../build-$(ConfigurationName)/Exercise2A/.d:
-	@if not exist "..\build-$(ConfigurationName)\Exercise2A" mkdir "..\build-$(ConfigurationName)\Exercise2A"
+../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/.d:
+	@if not exist "..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\__\__\Documentos\GitHub\basic-linear-structures-gr10\Exercise2A" mkdir "..\..\..\..\GitHubDS\Ejercicios\build-$(ConfigurationName)\__\__\Documentos\GitHub\basic-linear-structures-gr10\Exercise2A"
 
 PreBuild:
 
@@ -93,16 +93,16 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/Exercise2A/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/Exercise2A/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Victo/OneDrive/GitHubDS/Exercise2A/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Exercise2A/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Exercise2A/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Exercise2A/main.cpp$(DependSuffix) -MM main.cpp
+../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(ObjectSuffix): main.cpp ../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Victo/OneDrive/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(ObjectSuffix) -MF../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(DependSuffix) -MM main.cpp
 
-../build-$(ConfigurationName)/Exercise2A/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Exercise2A/main.cpp$(PreprocessSuffix) main.cpp
+../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A/main.cpp$(PreprocessSuffix) main.cpp
 
 
--include ../build-$(ConfigurationName)/Exercise2A//*$(DependSuffix)
+-include ../../../../GitHubDS/Ejercicios/build-$(ConfigurationName)/__/__/Documentos/GitHub/basic-linear-structures-gr10/Exercise2A//*$(DependSuffix)
 ##
 ## Clean
 ##
