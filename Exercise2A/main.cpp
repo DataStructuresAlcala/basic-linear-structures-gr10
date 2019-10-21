@@ -1,4 +1,4 @@
-//Ex2 A).
+//Ex2 B).
 
 #include <iostream>
 
